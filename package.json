@@ -1,0 +1,9 @@
+{
+  "name": "knotted-portal",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "export PATH=\"$HOME/.cargo/bin:$PATH\" && cd knotted-portal-master && npx wasm-pack build --target web && python3 -m http.server 3000",
+    "build": "apt-get update && apt-get install -y build-essential && curl https://sh.rustup.rs -sSf | sh -s -- -y && export PATH=\"$HOME/.cargo/bin:$PATH\" && cd knotted-portal-master && npx wasm-pack build --target web",
+    "start": "cd knotted-portal-master && python3 -m http.server 3000"
+  }
+}
